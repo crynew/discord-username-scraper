@@ -24,7 +24,7 @@ Este projeto é um bot do Discord que monitora mudanças de nomes de usuário e 
 
 2. Configure o arquivo de código:
 
-    - Abra o arquivo principal do bot (por exemplo, `index.ts`).
+    - Abra o arquivo principal do bot (`index.ts`).
     - Defina o nome de usuário desejado na variável `usernameSniper`.
 
     ```typescript
