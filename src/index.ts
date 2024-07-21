@@ -9,11 +9,11 @@ client.on('ready', () => {
 });
 
 client.on('userUpdate', async (oldUser, newUser) => {
-  if (oldUser.username !== newUser.username) {
+  if (oldUser && oldUser.username !== newUser.username) {
     if (newUser.username === usernameSniper) {
       console.log(`O username desejado '${usernameSniper}' foi liberado!`);
     } else {
-      console.log(`O usuário ${oldUser ? oldUser.tag: oldUser.username } mudou o nome de usuário para ${newUser.username}`);
+      console.log(`O usuário ${oldUser.tag ? oldUser.username : newUser.username} mudou o nome de usuário para ${newUser.username}`);
     }
   }
 });
